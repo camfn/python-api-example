@@ -397,9 +397,7 @@ def SetPrivacyState():
 
     return jsonify({"statusCode": 200, "error": None}), 200
 
-
 @app.route("/", methods=["POST", "GET"])
-@app.route("/rea", methods=["POST", "GET"])
 def main():
     if request.method != "POST":
         return "", 404
